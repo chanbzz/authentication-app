@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('register', [RegisterController::class, 'create']);
+
+Route::posix_times('register', [RegisterController::class, 'store']);
+
